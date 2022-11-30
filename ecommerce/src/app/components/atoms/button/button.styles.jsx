@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const BaseButton = styled.button`
   min-width: 30px;
   width: ${({ width }) => width || "auto"};
@@ -14,13 +13,11 @@ export const BaseButton = styled.button`
   align-items: center;
   padding: 16px 24px;
   gap: 16px;
-
   &:hover {
     border: ${({ border }) => border || "none"};
     background-color: ${({ backgroundColor }) => backgroundColor || "blue"};
   }
 `;
-
 export const CurvedButton = styled(BaseButton)`
   border-radius: 6px;
 `;
